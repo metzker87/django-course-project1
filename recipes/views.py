@@ -10,8 +10,8 @@ def home(request):
 
 
 def aboutus(request):
-    return render(request, 'temp/temp.html')
+    return HttpResponse("Contact us - Page")
 
 
 def contactus(request):
-    return HttpResponse("Contact us - Page")
+    return render(request, 'recipes/contactus.html')
